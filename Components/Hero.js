@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const About = () => {
+const Hero = () => {
   return (
     <>
       <div className="flex items-center justify-center min-h-full">
@@ -31,4 +31,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Hero;
