@@ -52,3 +52,14 @@
     transform: rotate(-45deg) translateY(6px) translateX(-6px);
     background-color: #fff;
   }
+
+  @media (max-width: 768px) {
+
+    .hamburger-top,
+    .hamburger-middle,
+    .hamburger-bottom {
+      top: 0;
+      left: 0;
+      background: #fff;
+    }
+  }

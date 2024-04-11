@@ -3,26 +3,31 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <>
-      <div className="flex items-center justify-center min-h-full">
-        <div className="bg-teal-50 p-2 mx-6 rounded-2xl">
-          <div className="flex flex-col md:flex-row space-y-10">
+      <div id="about" className=" section-container flex min-h-full">
+        <div className="p-2 mx-6 rounded-2xl">
+          <div className="relative flex flex-col md:flex-row space-y-10">
             <div className="mx-auto md:order-2">
               <Image
-                src="/Images/Ifeoluwa.jpg"
+                src="/Images/Ifeoluwa-removebg.png"
                 alt=""
                 width={250}
                 height={250}
-                className="rounded-full"
+                className="md:absolute rounded-full"
               />
             </div>
             <div className="p-4 space-y-6 md:space-y-12 md:w-1/2">
-              <h1 className="font-serif font-bold text-3xl mt-0 md:mt-8">
-                Hello, I'm Ifeoluwa.
+              <h1 className="font-serif font-bold text-3xl mt-0 md:mt-4 text-veryDarkBlue">
+                Hello,
               </h1>
-              <p className="my-6 tracking-wide  my-4 leading-7 md:text-left">
-                Welcome to my space. I am a fullstack web developer, who loves
-                bulding interactive and effective web applications.
-              </p>
+              <div className="my-6 tracking-wide  leading-7 md:text-left text-darkGrayishBlue">
+                <p className="text-2xl  text-darkGrayishBlue">
+                  Welcome to my space.
+                </p>
+                <p className="italic text-grayishBlue">
+                  I am a fullstack web developer, who loves bulding interactive
+                  and effective web applications.
+                </p>
+              </div>
             </div>
           </div>
         </div>

@@ -4,6 +4,7 @@ import { useState } from "react";
 import Logo from "./Logo";
 import NavLinks from "./NavLinks";
 import MobileMenu from "./MobileMenu";
+import ModeToggler from "./ModeToggler";
 
 const Nav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -18,6 +19,7 @@ const Nav = () => {
         <div className="flex items-center justify-between space-x-20 my-4">
           <Logo />
           <NavLinks />
+          <ModeToggler/>
           <MobileMenu menuOpen={menuOpen} navToggle={navToggle} />
         </div>
 
