@@ -1,6 +1,9 @@
+import { useTheme } from "next-themes";
 import "../styles/nav.css"
 
+
 const MobileMenu = ({ menuOpen, navToggle }) => {
+  const {theme} = useTheme();
     return (
       <button
         id="menu-btn"
@@ -9,9 +12,11 @@ const MobileMenu = ({ menuOpen, navToggle }) => {
         }`}
         onClick={navToggle}
       >
-        <span className="hamburger-top"></span>
-        <span className="hamburger-middle"></span>
-        <span className="hamburger-bottom"></span>
+
+      <span className='hamburger-top'></span>
+      <span className='hamburger-middle'></span>
+      <span className='hamburger-bottom'></span>
+        
       </button>
     );
   };
