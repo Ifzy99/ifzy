@@ -17,13 +17,13 @@ const Hero = () => {
             </div>
             <div className="p-4 space-y-6 md:space-y-12 md:w-1/2">
               <h1 className="font-serif font-bold text-3xl mt-0 md:mt-4 text-veryDarkBlue">
-                Hello,
+                Hello!
               </h1>
               <div className="my-6 tracking-wide  leading-7 md:text-left text-darkGrayishBlue">
-                <p className="text-2xl  text-darkGrayishBlue">
+                <p className="iam text-2xl  text-darkGrayishBlue">
                   Welcome to my space.
                 </p>
-                <p className="italic text-grayishBlue">
+                <p className="italic text-grayishBlue transition duration-200 ease-in dark:text-red-300     ">
                   I am a fullstack web developer, who loves bulding interactive
                   and effective web applications.
                 </p>

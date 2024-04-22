@@ -1,65 +1,92 @@
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
 /* HAMBURGER MENU */
 
 .hamburger {
-    cursor: pointer;
-    width: 24px;
-    height: 24px;
-    transition: all 0.25s;
-    position: relative;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 4px;
+  top: 0;
+  left: 0;
+  background: #000;
+  transform: rotate(0);
+  transition: all 0.5s;
+  border-radius: 3px;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+  background: #000;
+}
+
+.open {
+  transform: rotate(90deg);
+  transform: translateY(0px);
+  position: fixed;
+  top: 50px;
+  right: 25px;
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+  background-color: #fff;
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+  background-color: #fff;
+}
+
+@media (max-width: 768px) {
+  .hamburger-top {
+    top: 0;
+    right: 50%;
+    background: #fff;
+    width: 50%;
   }
-  
-  .hamburger-top,
-  .hamburger-middle,
-  .hamburger-bottom {
-    content: '';
-    position: absolute;
-    width: 24px;
-    height: 3px;
+
+  .hamburger-middle {
     top: 0;
     left: 0;
-    background: #000;
-    transform: rotate(0);
-    transition: all 0.5s;
+    background: #fff;
   }
-  
-  .hamburger-middle {
-    transform: translateY(7px);
-  }
-  
   .hamburger-bottom {
-    transform: translateY(14px);
-    background: #000;
+    bottom: 0;
+    left: 50%;
+    background: #e08e6d;
+    width: 50%;
   }
 
-  .open {
-    transform: rotate(90deg);
-    transform: translateY(0px);
-    position: fixed;
-    top: 50px;
-    right: 25px;
-  }
-  
   .open .hamburger-top {
-    transform: rotate(45deg) translateY(6px) translateX(6px);
-    background-color: #fff;
+    width: 32px;
+    transform: rotate(45deg) translate(0, 0);
   }
-  
-  .open .hamburger-middle {
-    display: none;
-  }
-  
+
   .open .hamburger-bottom {
-    transform: rotate(-45deg) translateY(6px) translateX(-6px);
-    background-color: #fff;
+    width: 32px;
+    transform: rotate(-45deg) translate(0, 0);
   }
-
-  @media (max-width: 768px) {
-
-    .hamburger-top,
-    .hamburger-middle,
-    .hamburger-bottom {
-      top: 0;
-      left: 0;
-      background: #fff;
-    }
-  }
+}
