@@ -8,7 +8,10 @@ const About = () => {
     threshold: 0.5, // 50% of the element must be visible to trigger the animation
   });
   return (
-    <div className="section-container flex flex-col" ref={animationRef}>
+    <div
+      className="section-container flex flex-col"
+      ref={animationRef}
+    >
       <div className="mx-auto p-6 my-5 md:mt-20">
         <h2
           className={`font-black text-2xl tracking-widest text-veryDarkBlue ${
@@ -54,7 +57,6 @@ const About = () => {
           </p>
         </div>
       </div>
-
     </div>
   );
 };

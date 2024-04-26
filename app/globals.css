@@ -19,52 +19,49 @@ body {
   font-family:Rubik;
 } */
 
-/* styles/globals.css
-body {
-  font-family: sans-serif;
-  transition: background-color 0.3s ease;
-}
-
-.dark-mode {
-  background-color: #333;
-  color: #fff;
-} */
-
 .section-container {
   @apply items-center justify-center max-w-6xl mx-auto;
 }
 
-.iam {
-  animation: bounce 2s infinite;
-}
-.aboutTxt {
-  font-family: Rubik;
-}
-
-@keyframes bounce {
-  0%,
-  100% {
-    transform: translateY(-25%);
-    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
-  }
-  50% {
-    transform: translateY(0);
-    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
-  }
-}
-
-#about {
+#hero {
   background-image: url("../public/Images/bg-header-desktop.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+#skills {
+  background-image: url("/Images/giphy stic.gif");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.aboutTxt {
+  font-family: Rubik;
+}
+
+.skills-header h2 {
+  font-family: Roboto;
+  font-size: 10rem;
+  color: #3a3939;
+  font-weight: 900;
+}
+
 
 @media (max-width: 576px) {
   #logo {
     width: 50px;
     height: 50px;
   }
-  #about {
+  #hero {
     background-image: url("../public/Images/bg-header-mobile.png");
   }
+
+  .skills-header h2 {
+    font-family: Roboto;
+    font-size: 5rem;
+    color: #3a3939;
+    font-weight: 900;
+  }
+
 }

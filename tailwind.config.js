@@ -19,16 +19,50 @@ module.exports = {
       animation: {
         "slide-up": "slide-up 1s ease-out",
         "slide-left": "slide-left 2s ease-out",
+         "marquee": "marquee 60s linear infinite",
+        "reverse-marquee": "reverse-marquee 60s linear infinite",
+        "bounce":"bounce 2s infinite",
+        // 'marquee-scroll-x': 'scroll-x 60s linear infinite',
+        // 'marquee-scroll-x-reverse': 'scroll-x-reverse 60s linear infinite',
       },
       keyframes: {
-        'slide-up': {
-          '0%': { transform: 'translateY(100vh)', opacity: 0 },
-          '100%': { transform: 'translateY(0)', opacity: 1 }
+        "slide-up": {
+          "0%": { transform: "translateY(100vh)", opacity: 0 },
+          "100%": { transform: "translateY(0)", opacity: 1 },
         },
         "slide-left": {
           "0%": { transform: "translateX(-100%)" },
           "100%": { transform: "translateX(0)" },
         },
+        "marquee": {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+        "reverse-marquee": {
+          "0%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(100%)" },
+        },
+        "bounce":{
+          "0%, 100%": {
+            transform: 'translateY(-25%)',
+            animationTimingFunction: 'cubic-bezier(0.8, 0, 1, 1)',
+          },
+          '50%': {
+            transform: 'translateY(0)',
+            animationTimingFunction: 'cubic-bezier(0, 0, 0.2, 1)',
+          },
+        },
+        // 'scroll-x': {
+        //   '0%': { transform: 'translateX(0)' },
+        //   '100%': { transform: 'translateX(calc(-100% - var(--gap)))' },
+        // },
+        // 'scroll-x-reverse': {
+        //   '0%': { transform: 'translateX(calc(-100% - var(--gap)))' },
+        //   '100%': { transform: 'translateX(0)' },
+        // },
+        // 'fade': {
+        //   '100%': { opacity: 0, visibility: 'hidden' },
+        // },
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -52,10 +86,9 @@ module.exports = {
       },
       fontFamily: {
         sans: ["Rubik", "sans-serif"],
+        sans: ["Roboto", "sans-serif"],
       },
     },
   },
-  plugins: [
-    // require("flowbite/plugin")
-  ],
+  plugins: [],
 };
