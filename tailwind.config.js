@@ -22,8 +22,7 @@ module.exports = {
          "marquee": "marquee 60s linear infinite",
         "reverse-marquee": "reverse-marquee 60s linear infinite",
         "bounce":"bounce 2s infinite",
-        // 'marquee-scroll-x': 'scroll-x 60s linear infinite',
-        // 'marquee-scroll-x-reverse': 'scroll-x-reverse 60s linear infinite',
+        "gradient-x":"gradient-x 5s ease infinite",
       },
       keyframes: {
         "slide-up": {
@@ -51,18 +50,13 @@ module.exports = {
             transform: 'translateY(0)',
             animationTimingFunction: 'cubic-bezier(0, 0, 0.2, 1)',
           },
+          "gradient-x":{
+            "0%":{"background-position" : "0% 50%"},
+            "50%":{"background-position" : "100% 50%"},
+            "100%":{"background-position" : "0% 50%"},
+          },
         },
-        // 'scroll-x': {
-        //   '0%': { transform: 'translateX(0)' },
-        //   '100%': { transform: 'translateX(calc(-100% - var(--gap)))' },
-        // },
-        // 'scroll-x-reverse': {
-        //   '0%': { transform: 'translateX(calc(-100% - var(--gap)))' },
-        //   '100%': { transform: 'translateX(0)' },
-        // },
-        // 'fade': {
-        //   '100%': { opacity: 0, visibility: 'hidden' },
-        // },
+      
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

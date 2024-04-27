@@ -1,33 +1,111 @@
-import React from 'react'
+import React from "react";
 
 const Just = () => {
   return (
     <div>
-     <p className="traccking-widest">
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus dolorum iusto enim iste rerum culpa mollitia officiis porro architecto et dolorem ab quidem soluta neque, facere nam necessitatibus libero explicabo alias cumque aliquam sapiente velit. Culpa, illum. Nihil cupiditate possimus, excepturi dolor dicta ullam! Quo, ab ex est in expedita deleniti necessitatibus eaque accusantium excepturi asperiores fuga magnam explicabo porro, quam numquam quasi repellat incidunt? Odio voluptas architecto fugiat aperiam placeat ad, soluta quas, facilis consectetur repellendus eius quo dignissimos explicabo! Explicabo exercitationem in, repellat vel dolores modi culpa nostrum libero temporibus. Eveniet architecto eaque assumenda nam laboriosam vero aliquid quas sit dicta harum est at quisquam tempora et vitae perspiciatis nemo facere odit reiciendis, neque nostrum adipisci numquam velit cum. Impedit eaque eveniet nemo. Assumenda, laborum repellendus. Quam accusamus corporis minus atque distinctio praesentium illo aspernatur molestiae nihil. Delectus a quae, numquam ducimus libero pariatur iste doloremque incidunt blanditiis unde fuga commodi nesciunt accusamus. Perferendis laboriosam aliquam qui, magnam harum rerum error molestiae quibusdam dolor in dignissimos asperiores tempore corrupti! Dolorum, dolores itaque reiciendis repellendus ea corrupti? Iusto labore soluta expedita eligendi minus corporis. Perferendis pariatur fuga odio quo laborum eligendi quam repellat maiores nostrum sequi laboriosam, nihil sapiente ipsum fugit aut in magni corporis! Maxime non dicta consectetur animi praesentium asperiores incidunt saepe voluptatem corporis officiis possimus sapiente ex explicabo soluta quidem dolorem assumenda, repudiandae minus quod at natus provident mollitia quae sed. Ad, totam pariatur! Magnam, et alias impedit fuga qui quae, magni quisquam ipsam repellat eveniet deserunt quia culpa sequi optio excepturi error nesciunt cupiditate, porro illum commodi doloremque labore rem. Dolor dignissimos qui eaque nihil veniam omnis hic voluptas voluptatem architecto explicabo molestias itaque quidem incidunt placeat cum, voluptate nemo, harum quia. Harum assumenda, officiis hic nesciunt iusto culpa ea consequuntur voluptas. Obcaecati debitis modi quisquam atque, commodi unde velit minus illum voluptas, eius enim beatae aperiam accusantium? Placeat eligendi, maxime sit dignissimos incidunt voluptates quae eius impedit culpa ipsam minima nisi officia omnis possimus sunt autem eveniet alias quibusdam! Nulla distinctio soluta architecto ducimus quam mollitia dignissimos hic voluptatum non quia consequuntur, quo saepe perferendis provident neque placeat ipsam ex quasi autem enim, alias aliquam commodi. Saepe maiores non cupiditate deserunt impedit veritatis consequuntur distinctio sed tenetur architecto? Reiciendis sunt cum velit illum beatae voluptatibus eius tenetur facere odio facilis, cupiditate hic alias soluta, ea cumque consequatur numquam blanditiis fugiat magni itaque atque, voluptates nulla autem! Tenetur natus neque quasi quia libero nam incidunt explicabo atque, soluta est? Corporis, sed molestiae? Facilis possimus excepturi, ea quo adipisci sit nesciunt dolores obcaecati vel suscipit fugiat voluptatem delectus laudantium id quos nam explicabo modi quidem veniam quia enim officiis aliquid. Facilis facere, provident doloremque accusantium reprehenderit dolorum repudiandae sunt, quae ad ab aperiam? Dolorum a consequatur veniam facere est. Sed perferendis nesciunt similique quidem aspernatur amet totam facilis vel aperiam delectus natus, atque libero deleniti, doloribus quo nihil blanditiis aut facere laudantium incidunt quibusdam eaque fuga velit. Ratione temporibus neque quos unde repellendus eos, cupiditate, perspiciatis, maxime distinctio reprehenderit exercitationem? Tenetur perferendis amet suscipit fuga? Maxime quia non quidem, cum veritatis molestiae assumenda quaerat aliquam fuga tenetur, laudantium enim atque tempore quam excepturi sint libero quas modi itaque ipsa voluptas ea. Odio fugiat unde voluptate nulla libero reiciendis. Doloremque neque optio quo sunt laboriosam a quibusdam fugit enim possimus ea, facere consectetur obcaecati iusto non nisi fuga tempora? Consequuntur, nemo. Consequatur debitis fugiat nisi. Temporibus cum tempore consequuntur repellat eum nobis excepturi incidunt minima fuga hic nisi natus ad officia, inventore in voluptatem qui autem dolorem! Beatae, commodi quis optio, eos consequuntur facere quod possimus repudiandae repellat magni ullam obcaecati nostrum aliquam inventore, eveniet explicabo. Blanditiis harum qui voluptatum aperiam ullam amet ex ea excepturi quos, temporibus saepe pariatur ab vitae id neque sint ut voluptas, sed praesentium eveniet veritatis, dignissimos quae vel. Ex, nostrum? Maiores alias eum vel incidunt quidem earum dolore officiis suscipit dolorem nobis ab fugit, nemo enim libero blanditiis est cum dolores molestiae aliquam quam architecto praesentium dolor voluptates odio! Voluptates alias modi sequi atque, veritatis eos, mollitia perferendis porro neque repudiandae consequuntur dolorum vitae maxime odit aut fuga! At ipsa ut recusandae maxime fuga quam neque rerum odio tempore laudantium modi, minima optio, impedit eveniet ex voluptatibus explicabo unde? Pariatur optio eligendi sint. Iusto delectus voluptate dolorem unde, optio vero veniam voluptas voluptatum eligendi ab, natus possimus sit quam ea eos? Quo laborum illo explicabo harum debitis, minima aliquam obcaecati omnis eius ipsa corrupti nobis tempore similique itaque. Optio esse veniam aliquid eligendi eum nesciunt harum blanditiis? Vero nulla laudantium, aut ad culpa aliquam beatae ut sequi, atque quo eveniet corrupti ducimus officiis soluta voluptatibus nemo amet magni dolorum similique, totam at sunt itaque eum odit. Nam suscipit, doloribus optio et quia perferendis minus dolore dicta dolorem sit hic impedit voluptates qui quo officiis eius enim eaque provident odit debitis voluptate, ratione, nesciunt ex. Obcaecati doloremque amet dignissimos provident, beatae odit iure incidunt fuga magni quia, nisi voluptatum eaque adipisci asperiores quo aperiam natus blanditiis laboriosam explicabo debitis voluptatibus. Sed autem asperiores aliquam ullam eveniet sapiente dolores saepe quas neque dignissimos fugiat in delectus ad possimus veniam, velit, rerum, nesciunt architecto consectetur nihil quasi aut minus est. Quibusdam consequuntur saepe fuga sapiente corrupti nemo sed et quidem? Provident unde recusandae vitae, quisquam aliquam deserunt molestiae nisi modi alias pariatur eligendi labore, odit iste doloribus maiores repudiandae! Eius nulla tempore sed. Voluptas quam eligendi, nobis at iusto aut labore eos placeat. Dolore, ex ipsa. Amet saepe cupiditate eius! Soluta nam laborum, iste excepturi dolore, praesentium sunt impedit assumenda libero vitae nesciunt velit, iure illo ab consequuntur deleniti dignissimos? Deleniti vitae repellendus hic exercitationem. Autem aspernatur odit veniam animi cum cupiditate debitis, totam rem! Hic voluptatibus dolores aliquid ad vel voluptatum nemo cum debitis temporibus sint quis voluptates obcaecati assumenda ipsam optio, totam repellat quasi ratione architecto quo, quod facilis, alias eius! Non explicabo ut harum totam, laudantium ipsa sint dolorem placeat, assumenda eum iste tenetur odit necessitatibus eaque unde nam a at? z
-     </p>
+    {/*  <a href="">
+        <svg
+          stroke="currentColor"
+          fill="currentColor"
+          stroke-width="0"
+          viewBox="0 0 448 512"
+          class="social-icon"
+          height="1em"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
+        </svg>
+      </a>
 
-     <a href="">
-     <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="social-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>
-     </a>
+      <svg
+        stroke="currentColor"
+        fill="currentColor"
+        stroke-width="0"
+        viewBox="0 0 496 512"
+        class="social-icon"
+        height="1em"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
+      </svg>
 
-     <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512" class="social-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
-
-
-     <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="social-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
-
+      <svg
+        stroke="currentColor"
+        fill="currentColor"
+        stroke-width="0"
+        viewBox="0 0 512 512"
+        class="social-icon"
+        height="1em"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+  </svg>*/}
       {/* LinkedIn Icon SVG Path */}
-
+      {/*
       <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 30 30">
 <path d="M26.37,26l-8.795-12.822l0.015,0.012L25.52,4h-2.65l-6.46,7.48L11.28,4H4.33l8.211,11.971L12.54,15.97L3.88,26h2.65 l7.182-8.322L19.42,26H26.37z M10.23,6l12.34,18h-2.1L8.12,6H10.23z"></path>
 </svg>
+*/}
+      {/*<span class="skill-icons--tailwindcss-dark hidden"><h6 class="">TAILWIND</h6></span>*/}
 
-       {/*<span class="skill-icons--tailwindcss-dark hidden"><h6 class="">TAILWIND</h6></span>*/}
+      <div class="flex justify-center">
+        <div class="w-[400px] bg-gradient-to-r from-transparent via-[#3b243e] to-[#51707d] border-2 border-transparent p-8 text-white rounded-2xl flex flex-col gap-5 border-box bg-[#212121] animate-gradient-x bg-no-repeat bg-[200%_100%]">
+          <form class="flex flex-col gap-5">
+            <div class="flex flex-col gap-1">
+              <label for="name" class="text-[#717171] font-semibold text-xs">
+                Your Name
+              </label>
+              <input
+                required
+                name="clientName"
+                id="clientName"
+                type="text"
+                class="px-4 py-3 rounded-lg bg-transparent border border-[#414141] text-white focus:outline-none focus:border-veryDarkBlue placeholder:text-xs"
+                placeholder="What's your name?"
+              />
+            </div>
+            <div class="flex flex-col gap-1">
+              <label for="email" class="text-[#717171] font-semibold text-xs">
+                Your Email
+              </label>
+              <input
+                required
+                name="email"
+                id="email"
+                type="text"
+                class="px-4 py-3 rounded-lg bg-transparent border border-[#414141] text-white focus:outline-none focus:border-veryDarkBlue placeholder:text-xs"
+                placeholder="Enter your email"
+              />
+            </div>
+            <div class="flex flex-col gap-1">
+              <label
+                for="textarea"
+                class="text-[#717171] font-semibold text-xs"
+              >
+                Your Message
+              </label>
+              <textarea
+                required
+                cols="50"
+                rows="10"
+                id="textarea"
+                name="textarea"
+                class="px-4 py-3 rounded-lg bg-transparent border border-[#414141] text-white h-24 resize-none focus:outline-none focus:border-veryDarkBlue"></textarea>
+            </div>
+            <button
+              type="submit"
+              class="self-start px-4 py-3 bg-[#313131] border border-[#414141] text-[#717171] font-semibold rounded-lg hover:bg-white hover:border-white"
+            >
+              Send
+            </button>
+          </form>
+        </div>
+      </div>
     </div>
+  );
+};
 
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Cg fill='none'%3E%3Crect width='256' height='256' fill='%23f0db4f' rx='60'/%3E%3Cpath fill='%23323330' d='m67.312 213.932l19.59-11.856c3.78 6.701 7.218 12.371 15.465 12.371c7.905 0 12.889-3.092 12.889-15.12v-81.798h24.058v82.138c0 24.917-14.606 36.259-35.916 36.259c-19.245 0-30.416-9.967-36.087-21.996m85.07-2.576l19.588-11.341c5.157 8.421 11.859 14.607 23.715 14.607c9.969 0 16.325-4.984 16.325-11.858c0-8.248-6.53-11.17-17.528-15.98l-6.013-2.579c-17.357-7.388-28.871-16.668-28.871-36.258c0-18.044 13.748-31.792 35.229-31.792c15.294 0 26.292 5.328 34.196 19.247l-18.731 12.029c-4.125-7.389-8.591-10.31-15.465-10.31c-7.046 0-11.514 4.468-11.514 10.31c0 7.217 4.468 10.139 14.778 14.608l6.014 2.577c20.449 8.765 31.963 17.699 31.963 37.804c0 21.654-17.012 33.51-39.867 33.51c-22.339 0-36.774-10.654-43.819-24.574'/%3E%3C/g%3E%3C/svg%3E")
-
-  )
-}
-
-export default Just
+export default Just;
