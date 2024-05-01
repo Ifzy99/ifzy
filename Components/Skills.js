@@ -1,9 +1,9 @@
-import { useTheme } from 'next-themes';
+import { useTheme } from "next-themes";
 import "../styles/skills.css";
 
 const Skills = () => {
   return (
-    <div id="skills" className="section-container">
+    <div id="skills" className="section-container py-6">
       <div className="skills-header py-4 text-center">
         <h2>My Skills</h2>
 
@@ -16,8 +16,8 @@ const Skills = () => {
         </div>
       </div>
 
-      <div className="my-skills my-6">
-        <div className="marquee text-white overflow-hidden whitespace-nowrap">
+      <div className="my-skills my-6 text-grayishBlue">
+        <div className="marquee overflow-hidden whitespace-nowrap">
           <div className="flex  marquee-group animate-marquee text-center space-x-6">
             <div className="flex flex-col">
               <span className="skill-icons--html"></span>

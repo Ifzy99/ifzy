@@ -8,7 +8,7 @@ const About = () => {
     threshold: 0.5, // 50% of the element must be visible to trigger the animation
   });
   return (
-    <div
+    <div id="about"
       className="section-container flex flex-col"
       ref={animationRef}
     >

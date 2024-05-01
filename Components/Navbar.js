@@ -34,7 +34,7 @@ const Nav = () => {
           } flex-col items-center self-end w-full h-full m-h-screen px-6 py-1 pt-24 pb-4 tracking-widest text-white uppercase divide-y divide-gray-500 opacity-90 bg-veryDarkBlue md:hidden`}
         >
           <div className="w-full py-3 text-center">
-            <a href="#home" className="block hover:text-yellow-600">
+            <a href="#hero" className="block hover:text-yellow-600">
               Home
             </a>
           </div>
@@ -52,19 +52,19 @@ const Nav = () => {
           </div>
 
           <div className="w-full py-3 text-center">
-            <a href="skills" className="block hover:text-yellow-600">
+            <a href="#skills" className="block hover:text-yellow-600">
               Skills
             </a>
           </div>
 
           <div className="w-full py-3 text-center">
-            <a href="projects" className="block hover:text-yellow-600">
+            <a href="#projects" className="block hover:text-yellow-600">
               Projects
             </a>
           </div>
 
           <div className="w-full py-3 text-center">
-            <a href="contact" className="block hover:text-yellow-600        ">
+            <a href="#contact" className="block hover:text-yellow-600        ">
               Contact
             </a>
           </div>

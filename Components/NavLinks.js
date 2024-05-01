@@ -4,7 +4,7 @@ const NavLinks = () => {
   return (
     <>
         <div className="hidden items-center space-x-10 uppercase text-grayishBlue md:flex">
-                <a href="#home" className="tracking-widest hover:text-yellow-600">
+                <a href="#hero" className="tracking-widest hover:text-yellow-600">
                 Home
                 </a>
                 <a href="#about" className="tracking-widest hover:text-yellow-600">

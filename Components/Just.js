@@ -1,4 +1,11 @@
-import React from "react";
+"use client"
+import {
+  faGithub,
+  faLinkedin,
+  faXTwitter,
+} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "../styles/just.css"
 
 const Just = () => {
   return (
@@ -43,67 +50,97 @@ const Just = () => {
       >
         <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
   </svg>*/}
-      {/* LinkedIn Icon SVG Path */}
-      {/*
-      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 30 30">
-<path d="M26.37,26l-8.795-12.822l0.015,0.012L25.52,4h-2.65l-6.46,7.48L11.28,4H4.33l8.211,11.971L12.54,15.97L3.88,26h2.65 l7.182-8.322L19.42,26H26.37z M10.23,6l12.34,18h-2.1L8.12,6H10.23z"></path>
-</svg>
-*/}
-      {/*<span class="skill-icons--tailwindcss-dark hidden"><h6 class="">TAILWIND</h6></span>*/}
+     
+           
 
-      <div class="flex justify-center">
-        <div class="w-[400px] bg-gradient-to-r from-transparent via-[#3b243e] to-[#51707d] border-2 border-transparent p-8 text-white rounded-2xl flex flex-col gap-5 border-box bg-[#212121] animate-gradient-x bg-no-repeat bg-[200%_100%]">
-          <form class="flex flex-col gap-5">
-            <div class="flex flex-col gap-1">
-              <label for="name" class="text-[#717171] font-semibold text-xs">
-                Your Name
-              </label>
-              <input
-                required
-                name="clientName"
-                id="clientName"
-                type="text"
-                class="px-4 py-3 rounded-lg bg-transparent border border-[#414141] text-white focus:outline-none focus:border-veryDarkBlue placeholder:text-xs"
-                placeholder="What's your name?"
-              />
+        <div className="flex justify-between">
+            <div className="mt-6 w-1/2 border">
+                {/*<div className="contact-links space-x-6 justify-center"></div>*/}
+                <li>
+                <ul className="social-links py-5 m-0 px-0  d-flex justify-content-center align-items-center">
+                  <li>
+                    <a target="_blank" href="https://github.com/deeminentcoder">
+                    <FontAwesomeIcon icon={faGithub} />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      href="https://www.linkedin.com/in/kehinde-olaleye-307229123/"
+                    >
+                    <FontAwesomeIcon icon={faLinkedin} />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      href="https://twitter.com/DeEminentCoder"
+                    >
+                    <FontAwesomeIcon icon={faXTwitter} />
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              </div>
+
+        
+            <div class="flex justify-center">
+              <div class="w-[400px] bg-gradient-to-r from-transparent via-[#3b243e] to-[#51707d] border-2 border-transparent p-8 text-white rounded-2xl flex flex-col gap-5 border-box bg-[#212121] animate-gradient-x bg-no-repeat bg-[200%_100%]">
+                <form class="flex flex-col gap-5">
+                  <div class="flex flex-col gap-1">
+                    <label for="name" class="text-[#717171] font-semibold text-xs">
+                      Your Name
+                    </label>
+                    <input
+                      required
+                      name="clientName"
+                      id="clientName"
+                      type="text"
+                      class="px-4 py-3 rounded-lg bg-transparent border border-[#414141] text-white focus:outline-none focus:border-veryDarkBlue placeholder:text-xs"
+                      placeholder="What's your name?"
+                    />
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <label for="email" class="text-[#717171] font-semibold text-xs">
+                      Your Email
+                    </label>
+                    <input
+                      required
+                      name="email"
+                      id="email"
+                      type="text"
+                      class="px-4 py-3 rounded-lg bg-transparent border border-[#414141] text-white focus:outline-none focus:border-veryDarkBlue placeholder:text-xs"
+                      placeholder="Enter your email"
+                    />
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <label
+                      for="textarea"
+                      class="text-[#717171] font-semibold text-xs"
+                    >
+                      Your Message
+                    </label>
+                    <textarea
+                      required
+                      cols="50"
+                      rows="10"
+                      id="textarea"
+                      name="textarea"
+                      class="px-4 py-3 rounded-lg bg-transparent border border-[#414141] text-white h-24 resize-none focus:outline-none focus:border-veryDarkBlue"></textarea>
+                  </div>
+                  <button
+                    type="submit"
+                    class="self-start px-4 py-3 bg-[#313131] border border-[#414141] text-[#717171] font-semibold rounded-lg hover:bg-white hover:border-white"
+                  >
+                    Send
+                  </button>
+                </form>
+              </div>
             </div>
-            <div class="flex flex-col gap-1">
-              <label for="email" class="text-[#717171] font-semibold text-xs">
-                Your Email
-              </label>
-              <input
-                required
-                name="email"
-                id="email"
-                type="text"
-                class="px-4 py-3 rounded-lg bg-transparent border border-[#414141] text-white focus:outline-none focus:border-veryDarkBlue placeholder:text-xs"
-                placeholder="Enter your email"
-              />
-            </div>
-            <div class="flex flex-col gap-1">
-              <label
-                for="textarea"
-                class="text-[#717171] font-semibold text-xs"
-              >
-                Your Message
-              </label>
-              <textarea
-                required
-                cols="50"
-                rows="10"
-                id="textarea"
-                name="textarea"
-                class="px-4 py-3 rounded-lg bg-transparent border border-[#414141] text-white h-24 resize-none focus:outline-none focus:border-veryDarkBlue"></textarea>
-            </div>
-            <button
-              type="submit"
-              class="self-start px-4 py-3 bg-[#313131] border border-[#414141] text-[#717171] font-semibold rounded-lg hover:bg-white hover:border-white"
-            >
-              Send
-            </button>
-          </form>
         </div>
-      </div>
+
+
+        
     </div>
   );
 };
