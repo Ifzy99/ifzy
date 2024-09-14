@@ -4,7 +4,7 @@ import Button from "./Button";
 const Hero = () => {
   return (
     <>
-      <div id="hero" className=" section-container min-h-full mt-20">
+      <div id="hero" className="section-container min-h-full mt-20">
         <div className="p-2 lg:px-8 mx-6 rounded-2xl">
           <div className="relative flex flex-col md:flex-row space-y-10">
             <div className="mx-auto md:order-2">

@@ -59,22 +59,16 @@ body {
 }
 
 #skills {
-  background-image: url("/Images/giphy stic.gif");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+font-family: "Montserrat", sans-serif;
+}
+#skills h2, h3{
+  font-family: "Cairo Play", san-serif;
 }
 
 .aboutTxt {
   font-family: Rubik;
 }
 
-.skills-header h2 {
-  font-family: Roboto;
-  font-size: 10rem;
-  color: #3a3939;
-  font-weight: 900;
-}
 
 .conatct-bag {
   background-image: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOTd0ZjNqdG42ZHVmeGxucWU2eTRneGpsemVhczdpdDVsbWE2cnppYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JidwhuCLt3u5sXimzc/giphy-downsized-large.gif");
@@ -117,6 +111,24 @@ body {
 
 .animate-slide-left.animate {
   animation: slideInFromLeft 0.8s ease forwards;
+}
+
+.tilt-card {
+  transition: transform 0.3s ease;
+}
+
+.tilt-card:hover {
+  transform: perspective(1000px) rotateX(5deg) rotateY(-5deg) scale(1.05);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tilt-card {
+    transition: none;
+  }
+  
+  .tilt-card:hover {
+    transform: none;
+  }
 }
 /* PROJECT COMPONENT  */
 

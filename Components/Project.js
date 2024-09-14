@@ -25,6 +25,9 @@ const Project = () => {
     return () => observer.disconnect();
   }, []);
 
+ 
+
+
 
   const projectsData = [
     {
@@ -78,7 +81,7 @@ const Project = () => {
           <div 
             key={index} 
             ref={el => projectRefs.current[index] = el}
-            className="projects-card bg-rgba(212, 217, 217, 0.5) dark:bg-veryDarkViolet border border-gray-300 dark:border-gray-500 rounded-md p-1 md:p-1 animate-slide-left"
+            className="projects-card bg-rgba(212, 217, 217, 0.5) dark:bg-veryDarkViolet border border-gray-300 dark:border-gray-500 rounded-md p-1 md:p-1 animate-slide-left tilt-card"
           >
             <div className="py-2 text-left space-y-0 flex flex-row justify-between md:px-8 px-2 items-center">
               <div className="pb-3">
