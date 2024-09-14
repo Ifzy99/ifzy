@@ -1,3 +1,5 @@
+"use client"
+import { ThemeProvider } from 'next-themes'
 import About from "@/Components/About";
 import Contact from "@/Components/Contact";
 import Footer from "@/Components/Footer";
@@ -9,17 +11,22 @@ import SocialIcons from "@/Components/SocialIcons";
 // import Just from "@/Components/Just";
 
 export default function Home() {
+  
   return (
     <>
-      <Navbar />
+    <ThemeProvider attribute="class">
+    <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
+      <Navbar  />
       <Hero />
       <About />
       <Skills/>
       <Project/>
-      <Contact/>
-      {/*<Just/>*/}
+       <Contact/>
+       {/*<Just/>*/}
       <SocialIcons/>
       <Footer />
+      </div>
+      </ThemeProvider>
     </>
   );
 }

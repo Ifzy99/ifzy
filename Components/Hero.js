@@ -1,24 +1,26 @@
 import Image from "next/image";
+import Button from "./Button";
 
 const Hero = () => {
   return (
     <>
-      <div id="hero" className=" section-container flex min-h-full">
-        <div className="p-2 mx-6 rounded-2xl">
+      <div id="hero" className=" section-container min-h-full mt-20">
+        <div className="p-2 lg:px-8 mx-6 rounded-2xl">
           <div className="relative flex flex-col md:flex-row space-y-10">
             <div className="mx-auto md:order-2">
               <Image
                 src="/Images/Ifeoluwa-removebg.png"
-                alt=""
+                alt="ifeoluwa Image"
                 width={250}
                 height={250}
                 className="md:absolute rounded-full"
               />
             </div>
             <div className="p-4 space-y-6 md:space-y-12 md:w-1/2">
-              <h1 className="font-serif font-bold text-3xl mt-0 md:mt-4 text-veryDarkBlue">
-                Hello!
-              </h1>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0e3e6b] dark:text-[#4ec1b5] mb-4 transition-colors duration-300 tracking-widest leading-snug">
+            I'm Web Developer <br className="hidden sm:inline" />
+            Ifeoluwa A. Olatunbosun
+          </h1>
               <div className="my-6 tracking-wide  leading-7 md:text-left text-darkGrayishBlue">
                 <p className="animate-bounce text-2xl  text-darkGrayishBlue">
                   Welcome to my space.
@@ -28,6 +30,7 @@ const Hero = () => {
                   and effective web applications.
                 </p>
               </div>
+              <Button/>
             </div>
           </div>
         </div>

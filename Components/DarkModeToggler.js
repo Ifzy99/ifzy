@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useTheme } from 'next-themes';
 
-const DarkModeToggler = () => {
+const DarkModeToggler = ({ isDarkMode, setIsDarkMode }) => {
   const [mounted, setMounted] = useState(false);
   const { systemTheme, theme, setTheme } = useTheme();
 

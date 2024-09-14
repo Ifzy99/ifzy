@@ -3,17 +3,34 @@
 @tailwind utilities;
 
 /* /styles/globals.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo+Play:wght@200..1000&display=swap');
+
 :root {
   --background-color: #fff;
   --text-color: #000;
 }
 
-html {
-  scroll-behavior: smooth;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #1a202c;
+    --text-color: #fff;
+  }
 }
 
+html {
+  scroll-behavior: smooth;
+
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+
 .section-container {
-  @apply items-center justify-center max-w-6xl mx-auto;
+  @apply items-center justify-center mx-auto;
 }
 
 /* CSS */
@@ -38,6 +55,7 @@ html {
   background-image: url("../public/Images/bg-header-desktop.png");
   background-repeat: no-repeat;
   background-size: contain;
+  font-family: "Montserrat", sans-serif;
 }
 
 #skills {
@@ -68,8 +86,39 @@ html {
   background-repeat: no-repeat;
   background-position: center;
   opacity: 1;
-  background-image: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYmZjN3dwbGMycnhidzlpaHhod2x0M2trdHp1eTQ4YTgxd2NrdXBxMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/hqsAG8bRlH0JbBDbHP/giphy.gif")
+  background-image: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYmZjN3dwbGMycnhidzlpaHhod2x0M2trdHp1eTQ4YTgxd2NrdXBxMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/hqsAG8bRlH0JbBDbHP/giphy.gif");
 }
+
+  /* PROJECT COMPONENT  */
+#projects .projects-card {
+  font-family: "Montserrat", san-serif;
+
+}
+#projects h2 {
+  font-family: "Cairo Play", san-serif;
+}
+
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-left {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: opacity 0.5s ease, transform .5s ease;
+}
+
+.animate-slide-left.animate {
+  animation: slideInFromLeft 0.8s ease forwards;
+}
+/* PROJECT COMPONENT  */
 
 @media (max-width: 576px) {
   #logo {
@@ -86,4 +135,25 @@ html {
     color: #3a3939;
     font-weight: 900;
   }
+}
+
+
+.dark .social-icon {
+  @apply text-gray-300;
+}
+
+.dark .social-icon:hover {
+  @apply text-blue-400;
+}
+
+.dark .dash {
+  @apply bg-gray-300;
+}
+
+.dark .social-icon:hover .dash {
+  @apply bg-blue-400;
+}
+
+.dark .skills-header h2 {
+  color: #d1d1d1;
 }

@@ -1,6 +1,6 @@
 import { Inter, Roboto, Rubik } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider} from "next-themes";
+import { ThemeProvider } from "next-themes";
 
 const robotoWeights = {
   100: "Roboto-Light",
@@ -14,7 +14,7 @@ const robotoWeights = {
 const inter = Inter({ subsets: ["latin"] });
 
 const rubik = Rubik({ subsets: ["latin"] });
-const roboto = Roboto({ subsets: ["latin"], weight: '500'});
+const roboto = Roboto({ subsets: ["latin"], weight: "500" });
 
 export const metadata = {
   title: "Create Next App",
