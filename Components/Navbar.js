@@ -42,17 +42,17 @@ const Navbar = () => {
 
   return (
     <nav 
-      className={`w-full transition-all duration-300 
-        ${isFixed 
-          ? 'fixed top-0 left-0 z-50 shadow-md' 
-          : 'absolute top-0 left-0 z-50'}
-        ${isFixed ? 'bg-opacity-90' : 'bg-transparent'}`}
-      style={{
-        backgroundColor: isFixed ? 'var(--background-color)' : 'transparent',
-        color: isFixed ? 'var(--text-color)' : 'inherit'
-      }}
+    className={`
+      w-full 
+      transition-all duration-300 
+      ${isFixed ? 'fixed shadow-md' : 'absolute'} 
+      top-0 left-0 z-50
+      ${isFixed 
+        ? 'bg-white text-gray-900 dark:bg-gray-900 dark:text-white' 
+        : 'bg-transparent dark:bg-gray-900 text-white'}
+    `}
     >
-      <div className="container relative mx-auto p-3">
+      <div className="container relative mx-auto p-4">
         <div className="flex items-center lg:px-8 justify-between space-x-20 ">
           <Logo />
           <NavLinks />

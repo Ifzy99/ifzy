@@ -6,26 +6,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cairo+Play:wght@200..1000&display=swap');
 
-:root {
-  --background-color: #fff;
-  --text-color: #000;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background-color: #1a202c;
-    --text-color: #fff;
-  }
-}
-
 html {
   scroll-behavior: smooth;
-
-}
-
-body {
-  background-color: var(--background-color);
-  color: var(--text-color);
+  font-optical-sizing: auto;
 }
 
 
@@ -55,11 +38,11 @@ body {
   background-image: url("../public/Images/bg-header-desktop.png");
   background-repeat: no-repeat;
   background-size: contain;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", san-serif;
 }
 
 #skills {
-font-family: "Montserrat", sans-serif;
+font-family: "Montserrat", san-serif;
 }
 #skills h2, h3{
   font-family: "Cairo Play", san-serif;
@@ -69,19 +52,6 @@ font-family: "Montserrat", sans-serif;
   font-family: Rubik;
 }
 
-
-.conatct-bag {
-  background-image: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOTd0ZjNqdG42ZHVmeGxucWU2eTRneGpsemVhczdpdDVsbWE2cnppYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JidwhuCLt3u5sXimzc/giphy-downsized-large.gif");
-  background-repeat: no-repeat;
-  /* background: cover; */
-}
-.contact-light {
-  /* background-image: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbW4zbGY0NWN0Mml1d295c3U2and2d3A3d29yd3J1YnJ0N2RzZTk3ZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l5JbspfwZ0yjHjlJ0K/giphy-downsized-large.gif"); */
-  background-repeat: no-repeat;
-  background-position: center;
-  opacity: 1;
-  background-image: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYmZjN3dwbGMycnhidzlpaHhod2x0M2trdHp1eTQ4YTgxd2NrdXBxMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/hqsAG8bRlH0JbBDbHP/giphy.gif");
-}
 
   /* PROJECT COMPONENT  */
 #projects .projects-card {
