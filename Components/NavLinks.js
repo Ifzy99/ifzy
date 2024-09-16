@@ -3,7 +3,7 @@
 const NavLinks = () => {
   return (
     <>
-        <div className="hidden items-center space-x-10 uppercase text-grayishBlue md:flex">
+        <div className="hidden items-center space-x-10 uppercase text-gray-900 dark:text-grayishBlue  md:flex">
                 <a href="#hero" className="tracking-widest hover:text-yellow-600">
                 Home
                 </a>

@@ -77,7 +77,6 @@ module.exports = {
         softRed: "hsl(0, 94%, 66%)",
         red: "hsl(0, 87%, 67%)",
         cyanLight: "hsl(180, 66%, 69%)",
-        cyan: "hsl(180, 66%, 49%)",
         strongCyan: "hsl(171, 66%, 44%)",
         darkViolet: "hsl(257, 27%, 26%)",
         veryDarkViolet: "hsl(260, 8%, 14%) ",
@@ -85,9 +84,11 @@ module.exports = {
         gray: {
           900: '#1a202c', 
         },
+        'navy-blue': '#0a2472', 
+        'coral': '#ff6b6b',
+        'coral-dark': '#ff5252',
       },
       fontFamily: {
-        sans: ["Rubik", "sans-serif"],
         sans: ["Roboto", "sans-serif"],
       },
     },

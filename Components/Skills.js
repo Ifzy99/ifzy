@@ -33,8 +33,10 @@ const Skills = () => {
   ];
 
   return (
-    <div  className="p-4 md:p-8 bg-rgba(212, 217, 217, 0.5) dark:bg-gray-900 text-grayishBlue dark:text-white">
-      <h2 className="text-3xl font-bold mb-6 text-center text-#333 dark:darkGrayishBlue">My Skills</h2>
+    <div id="skills"  className="p-4 md:p-8 bg-rgba(212, 217, 217, 0.5) dark:bg-gray-900 text-grayishBlue dark:text-white">
+      <h2 className="text-2xl md:text-4xl font-bold mb-6 text-center text-#333 dark:darkGrayishBlue">My Skills</h2>
+     {/*<div className="w-24 h-1 bg-yellow-600 mx-auto mb-16"></div>*/}
+
       
       <div className="space-y-6 my-8">  
         <SkillSection title="Frontend" skills={skillsData} />
@@ -47,7 +49,7 @@ const Skills = () => {
 
 const SkillSection = ({ title, skills }) => {
   return (
-    <div id="skills" className=" px-8 md:px-12  py-4">
+    <div  className=" px-8 md:px-12  py-4">
       <h3 className="text-xl sm:text-l font-medium mb-4">{title}</h3>
       <div className="flex flex-wrap justify-between sm:justify-start gap-3 sm:gap-4">
         {skills.map((skill, index) => (

@@ -1,63 +1,54 @@
 "use client";
-import useInViewAnimation from "@/pages/lib/useInViewAnimation";
+
+import Image from 'next/image';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 
 const About = () => {
-  const [animationRef, isInView] = useInViewAnimation({
-    root: null, // Use the viewport as the root
-    rootMargin: "0px", // No root margin
-    threshold: 0.5, // 50% of the element must be visible to trigger the animation
-  });
   return (
-    <div id="about"
-      className="section-container flex flex-col"
-      ref={animationRef}
-    >
-      <div className="mx-auto p-6 my-5 md:mt-20">
-        <h2
-          className={`font-black text-2xl tracking-widest text-veryDarkBlue ${
-            isInView ? "animate-slide-left" : ""
-          }`}
-        >
-          Who am I
-        </h2>
-      </div>
-      <div className="mx-auto p-6 tracking-wide max-w-6xl text-grayishBlue text-base md:text-lg">
-        <h2
-          className={` my-4 text-3xl font-bold text-darkViolet font-serif leading-9 ${
-            isInView ? "animate-slide-up" : ""
-          } `}
-        >
-          {" "}
-          I'm Olatunbosun Ifeoluwa.
-        </h2>
-        <div
-          className={` aboutTxt text-sm  md:text-base ${
-            isInView ? "animate-slide-left" : ""
-          }`}
-        >
-          <p>
-            A Fullstack web developer with a passion for building and designing
-            intuitive and dynamic websites with seamless user experiences.
-            Well-organised fellow,problem-solver and an apt mind to details. I
-            yearn to code so as to be able to build awesome websites and web
-            applications that will provide solutions to for people all over the
-            world.
+    <section id="#about" className="py-16 px-8 md:px-6 max-w-7xl mx-auto">
+      <h2 className="text-2xl md:text-4xl font-bold text-center text-grayishBlue dark:text-white mb-10">About Me</h2>
+
+      <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
+        <div className="md:w-1/2">
+          <h3 className="text-2xl md:text-3xl font-bold text-navy-blue dark:text-[#4ec1b5] mb-4 leading-tight">
+            Developing With a Passion<br />While Exploring The World.
+          </h3>
+          <div className="w-16 h-1 bg-yellow-600 mb-6"></div>
+          <p className="text-gray-600 mb-4">
+            I am an enthusiastic and a passionate web developer with experience of working with both frontend and backend frameworks.
           </p>
-          <p className="my-4">
-            When I'm not coding you'll catch me watching my favorite football
-            club Arsenal's game or chatting with friends on all things sports or
-            life in general. A fan of music as well when coding especially when
-            it comes to designing a project or website.
+          <p className="text-gray-600 mb-4">
+           So far,I've focused on building landing pages and web applications, primarily using the MERN stack (MongoDB, Express, React, Node.js).I also have experience with Angular, Vue, , PHP and Next.JS. I am skilled at understanding project requirements and turning them into functional, user-friendly solutions. I'm a strong advocate for continuous learning and always strive to stay updated with the latest trends and technologies in the web development field. This approach helps me deliver efficient and modern solutions in my projects.
           </p>
-          <p>
-            My drive for excellence, attention to detail, and constant eagerness
-            to learn is one positive I consider is important for any development
-            role. Interested in the entire fullstack spectrum and looking
-            forward to working on/with amazing projects and positive people.
+          <p className="text-gray-600 mb-8">
+          When I'm not coding, you can usually find me watching a football match, especially if Arsenal is playing, or browsing the web to stay updated on global events. I'm also a fan of good music and enjoy watching movies in my downtime.
           </p>
+          <div className="">
+          <button className="bg-yellow-600 text-white px-6 py-3  rounded-md  transition duration-300">
+            Contact Me
+          </button>
+          <button className="bg-yellow-600 text-white px-6 py-3 mx-4 rounded-md  transition duration-300">
+            Resume
+            <span> <FontAwesomeIcon icon={faDownload} /></span>
+        </button>
+          </div>
+        </div>
+        <div className="md:w-1/2 relative">
+          <div className="bg-gray-900 dark:bg-veryDarkBlue w-full h-full absolute top-4 left-4 rounded-lg"></div>
+          <div className="relative z-10 bg-gray-200 rounded-lg overflow-hidden">
+            <Image
+              src="/Images/selfie.jpg"
+              alt="Developer working on laptop"
+              width={640}
+              height={480}
+              className="w-full h-auto"
+            />
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

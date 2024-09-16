@@ -8,7 +8,7 @@ import Navbar from "@/Components/Navbar";
 import Project from "@/Components/Project";
 import Skills from "@/Components/Skills";
 import SocialIcons from "@/Components/SocialIcons";
-// import Just from "@/Components/Just";
+import Just from "@/Components/Just";
 
 export default function Home() {
   
@@ -18,8 +18,8 @@ export default function Home() {
     <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
       <Navbar  />
       <Hero />
-      <About />
       <Skills/>
+      <About />
       <Project/>
        <Contact/>
        {/*<Just/>*/}

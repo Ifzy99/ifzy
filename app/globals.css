@@ -22,16 +22,12 @@ html {
   @apply relative flex items-center justify-center w-10 h-10 text-gray-600 transition-colors duration-300 overflow-hidden;
 }
 
-.social-icon:hover {
-  @apply text-blue-500;
-}
-
 .dash {
-  @apply absolute left-1/2 -translate-x-3  w-6 h-5 space-y-8 bg-gray-600 transition-transform duration-300 -translate-y-7 scroll-smooth;
+  @apply absolute left-1/2 -translate-x-3  w-6 h-5 space-y-8 transition-transform duration-300 -translate-y-7 scroll-smooth;
 }
 
 .social-icon:hover .dash {
-  @apply bg-blue-500 translate-y-[calc(100%+0.25rem)];
+  @apply translate-y-[calc(100%+0.25rem)];
 }
 
 #hero {
@@ -41,6 +37,8 @@ html {
   font-family: "Montserrat", san-serif;
 }
 
+/* SKILLS  */
+
 #skills {
 font-family: "Montserrat", san-serif;
 }
@@ -48,9 +46,7 @@ font-family: "Montserrat", san-serif;
   font-family: "Cairo Play", san-serif;
 }
 
-.aboutTxt {
-  font-family: Rubik;
-}
+/* SKILLS  */
 
 
   /* PROJECT COMPONENT  */
@@ -102,6 +98,8 @@ font-family: "Montserrat", san-serif;
 }
 /* PROJECT COMPONENT  */
 
+
+
 @media (max-width: 576px) {
   #logo {
     width: 50px;
@@ -120,22 +118,6 @@ font-family: "Montserrat", san-serif;
 }
 
 
-.dark .social-icon {
-  @apply text-gray-300;
-}
-
-.dark .social-icon:hover {
-  @apply text-blue-400;
-}
-
-.dark .dash {
-  @apply bg-gray-300;
-}
-
-.dark .social-icon:hover .dash {
-  @apply bg-blue-400;
-}
-
-.dark .skills-header h2 {
+.skills-header h2 {
   color: #d1d1d1;
 }

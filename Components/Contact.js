@@ -53,28 +53,28 @@ const Contact = () => {
          return(
             <div
             id="contact"
-            className="section-container flex flex-col justify-between md:flex-row-reverse"
+            className="section-container flex flex-col py-8 justify-between md:flex-row-reverse"
           >
             <div className="mt-6 w-1/2">
               <div className="flex justify-center space-x-6 text-4xl">
-                <a href="https://github.com/Ifzy99" className="social-icon ">
+                <a href="https://github.com/Ifzy99" className="social-icon  hover:text-gray-700  dark:hover:text-white">
                   <FontAwesomeIcon icon={faGithub} />
-                  <span className="dash"></span>
+                  <span className="dash  bg-gray-700  hover:bg-gray-700"></span>
                 </a>
                 <a
                 href="https://www.linkedin.com/in/olatunbosun-ifeoluwa"
-                className="social-icon"
+                className="social-icon  hover:text-blue-700"
               >
                 <FontAwesomeIcon icon={faLinkedin} />
-                <span className="dash"></span>
+                <span className="dash  bg-blue-700  hover:bg-blue-700"></span>
               </a>
-                <a href="https://twitter.com/Ifzyman?s=09" className="social-icon">
+                <a href="https://twitter.com/Ifzyman?s=09" className="social-icon  hover:text-gray-700 dark:hover:text-white">
                   <FontAwesomeIcon icon={faXTwitter} />
-                  <span className="dash"></span>
+                  <span className="dash  bg-gray-700  hover:bg-gray-700 "></span>
                 </a>
-                <a href="https://wa.link/t5bxad" className="social-icon">
+                <a href="https://wa.link/t5bxad" className="social-icon hover:text-green-600">
                   <FontAwesomeIcon icon={faWhatsapp} />
-                  <span className="dash"></span>
+                  <span className="dash bg-green-600  hover:bg-green-600"></span>
                 </a>
               </div>
             </div>

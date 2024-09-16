@@ -13,7 +13,6 @@ const robotoWeights = {
 
 const inter = Inter({ subsets: ["latin"] });
 
-const rubik = Rubik({ subsets: ["latin"] });
 const roboto = Roboto({ subsets: ["latin"], weight: "500" });
 
 export const metadata = {
@@ -25,7 +24,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${inter.className} ${rubik.className} ${roboto.className}`}
+        className={`${inter.className}  ${roboto.className}`}
       >
         <ThemeProvider attribute="class">{children}</ThemeProvider>
       </body>
