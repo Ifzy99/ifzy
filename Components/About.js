@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const About = () => {
   return (
-    <section id="#about" className="py-16 px-8 md:px-6 max-w-7xl mx-auto">
+    <section id="about" className="py-16 px-8 md:px-6 max-w-7xl mx-auto">
       <h2 className="text-2xl md:text-4xl font-bold text-center text-grayishBlue dark:text-white mb-10">About Me</h2>
 
       <div className="flex flex-col md:flex-row items-center md:items-start gap-8">

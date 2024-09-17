@@ -37,12 +37,20 @@ html {
   font-family: "Montserrat", san-serif;
 }
 
+#services{
+  font-family: "Montserrat", san-serif;
+}
+#services h2 h3{
+  font-family: "Cairo Play", sans-serif;
+}
+
+
 /* SKILLS  */
 
 #skills {
 font-family: "Montserrat", san-serif;
 }
-#skills h2, h3{
+#skills  h3{
   font-family: "Cairo Play", san-serif;
 }
 
