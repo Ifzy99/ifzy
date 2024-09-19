@@ -2,7 +2,8 @@
 
 import Image from 'next/image';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Button from './Button';
+import Link from 'next/link';
 
 
 const About = () => {
@@ -12,7 +13,7 @@ const About = () => {
 
       <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
         <div className="md:w-1/2">
-          <h3 className="text-2xl md:text-3xl font-bold text-navy-blue dark:text-[#4ec1b5] mb-4 leading-tight">
+          <h3 className="text-2xl md:text-3xl font-bold text-yellow-600 dark:text-[#4ec1b5] mb-4 leading-tight">
             Developing With a Passion<br />While Exploring The World.
           </h3>
           <div className="w-16 h-1 bg-yellow-600 mb-6"></div>
@@ -26,13 +27,12 @@ const About = () => {
           When I'm not coding, you can usually find me watching a football match, especially if Arsenal is playing, or browsing the web to stay updated on global events. I'm also a fan of good music and enjoy watching movies in my downtime.
           </p>
           <div className="">
-          <button className="bg-yellow-600 text-white px-6 py-3  rounded-md  transition duration-300">
-            Contact Me
-          </button>
-          <button className="bg-yellow-600 text-white px-6 py-3 mx-4 rounded-md  transition duration-300">
-            Resume
-            <span> <FontAwesomeIcon icon={faDownload} /></span>
-        </button>
+          <Link href="#contact" passHref legacyBehavior>
+          <Button text="Contact Me" />
+          </Link>
+          <Link href="https://drive.google.com/file/d/1xXIcQzoav-_1GlEWuFo9siaIsA7iIlr0/view?usp=drivesdk "passHref legacyBehavior>
+          <Button text="Resume" className="ml-4"  icon={faDownload} />
+          </Link>
           </div>
         </div>
         <div className="md:w-1/2 relative">

@@ -11,61 +11,39 @@ html {
   font-optical-sizing: auto;
 }
 
-
 .section-container {
   @apply items-center justify-center mx-auto;
 }
 
 /* CSS */
-
 .social-icon {
   @apply relative flex items-center justify-center w-10 h-10 text-gray-600 transition-colors duration-300 overflow-hidden;
 }
 
 .dash {
-  @apply absolute left-1/2 -translate-x-3  w-6 h-5 space-y-8 transition-transform duration-300 -translate-y-7 scroll-smooth;
+  @apply absolute left-1/2 -translate-x-3 w-6 h-5 space-y-8 transition-transform duration-300 -translate-y-7 scroll-smooth;
 }
 
 .social-icon:hover .dash {
   @apply translate-y-[calc(100%+0.25rem)];
 }
 
+/* Common styles */
+#hero, #services, #skills, #about, #contact,#footer, #projects {
+  font-family: "Montserrat", san-serif;
+}
+
+#services h2, #services h3, #skills h3, #projects h2 {
+  font-family: "Cairo Play", sans-serif;
+}
+
 #hero {
   background-image: url("../public/Images/bg-header-desktop.png");
   background-repeat: no-repeat;
   background-size: contain;
-  font-family: "Montserrat", san-serif;
 }
 
-#services{
-  font-family: "Montserrat", san-serif;
-}
-#services h2 h3{
-  font-family: "Cairo Play", sans-serif;
-}
-
-
-/* SKILLS  */
-
-#skills {
-font-family: "Montserrat", san-serif;
-}
-#skills  h3{
-  font-family: "Cairo Play", san-serif;
-}
-
-/* SKILLS  */
-
-
-  /* PROJECT COMPONENT  */
-#projects .projects-card {
-  font-family: "Montserrat", san-serif;
-
-}
-#projects h2 {
-  font-family: "Cairo Play", san-serif;
-}
-
+/* Animation */
 @keyframes slideInFromLeft {
   from {
     opacity: 0;
@@ -87,6 +65,7 @@ font-family: "Montserrat", san-serif;
   animation: slideInFromLeft 0.8s ease forwards;
 }
 
+/* Tilt effect */
 .tilt-card {
   transition: transform 0.3s ease;
 }
@@ -96,18 +75,13 @@ font-family: "Montserrat", san-serif;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .tilt-card {
+  .tilt-card, .tilt-card:hover {
     transition: none;
-  }
-  
-  .tilt-card:hover {
     transform: none;
   }
 }
-/* PROJECT COMPONENT  */
 
-
-
+/* Media queries */
 @media (max-width: 576px) {
   #logo {
     width: 50px;
@@ -117,15 +91,9 @@ font-family: "Montserrat", san-serif;
     background-image: url("../public/Images/bg-header-mobile.png");
   }
 
-  .skills-header h2 {
-    font-family: Roboto;
-    font-size: 5rem;
-    color: #3a3939;
-    font-weight: 900;
-  }
+
 }
 
-
-.skills-header h2 {
+/* .skills-header h2 {
   color: #d1d1d1;
-}
+} */

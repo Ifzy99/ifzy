@@ -7,11 +7,11 @@ const NavLinks = () => {
                 <a href="#hero" className="tracking-widest hover:text-yellow-600">
                 Home
                 </a>
-                <a href="#about" className="tracking-widest hover:text-yellow-600">
-                About
-                </a>
                 <a href="#services" className="tracking-widest hover:text-yellow-600">
                 Services
+                </a>
+                <a href="#about" className="tracking-widest hover:text-yellow-600">
+                About
                 </a>
                 <a href="#skills" className="tracking-widest hover:text-yellow-600">
                 Skills

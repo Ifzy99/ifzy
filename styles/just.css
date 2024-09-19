@@ -1,4 +1,4 @@
-@keyframes slideInFromLeft {
+/* @keyframes slideInFromLeft {
   from {
     opacity: 0;
     transform: translateX(-100px);
@@ -17,30 +17,5 @@
 
 .animate-slide-left.animate {
   animation: slideInFromLeft 0.8s ease forwards;
-}
-
-/* @keyframes slideInFromLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-100px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.project-card {
-  opacity: 0;
-  transform: translateX(-100px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.project-card:hover, .project-card:focus-within {
-  animation: slideInFromLeft 1.5s ease forwards;
-}
-
-#projects:hover .project-card {
-  opacity: 1;
-  transform: translateX(0);
 } */
+

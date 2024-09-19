@@ -21,9 +21,9 @@ module.exports = {
         "slide-up": "slide-up 1s ease-out",
         "slide-left": "slide-left 1s ease-in-out",
         "slide-right": "slide-right 1s ease-in-out forwards",
-        " marquee": "marquee 60s linear infinite",
+        "marquee": "marquee 60s linear infinite",
         "reverse-marquee": "reverse-marquee 60s linear infinite",
-        " bounce": "bounce 2s infinite",
+        "bounce": "bounce 2s infinite",
         "gradient-x": "gradient-x 5s ease infinite",
       },
       keyframes: {

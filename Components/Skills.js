@@ -33,7 +33,7 @@ const Skills = () => {
   ];
 
   return (
-    <div id="skills"  className="p-4 md:p-8 bg-rgba(212, 217, 217, 0.5) dark:bg-gray-900 text-grayishBlue dark:text-white">
+    <div id="skills"  className="p-4 md:p-8 bg-rgba(212, 217, 217, 0.5) dark:bg-gray-900 text-grayishBlue dark:text-white animate-slide-right">
       <h2 className="text-2xl md:text-4xl font-bold mb-6 text-center text-#333 dark:darkGrayishBlue">My Skills</h2>
      {/*<div className="w-24 h-1 bg-yellow-600 mx-auto mb-16"></div>*/}
 

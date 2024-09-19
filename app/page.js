@@ -20,8 +20,8 @@ export default function Home() {
       <Navbar  />
       <Hero />
       <Services/>
-      <Skills/>
       <About />
+      <Skills/>
       <Project/>
        <Contact/>
        {/*<Just/>*/}

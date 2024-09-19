@@ -2,6 +2,9 @@ import Image from "next/image";
 import Button from "./Button";
 
 const Hero = () => {
+  const handleClick = () => {
+    console.log('Button clicked!');
+  };
   return (
     <>
       <div id="hero" className="section-container min-h-full mt-20">
@@ -17,7 +20,7 @@ const Hero = () => {
               />
             </div>
             <div className="p-4 space-y-6 md:space-y-12 md:w-1/2">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0e3e6b] dark:text-[#4ec1b5] mb-4 transition-colors duration-300 tracking-widest leading-snug">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-yellow-800 dark:text-[#4ec1b5] mb-4 transition-colors duration-300 tracking-widest leading-snug">
             I'm Web Developer <br className="hidden sm:inline" />
             Ifeoluwa A. Olatunbosun
           </h1>
@@ -30,7 +33,7 @@ const Hero = () => {
                   and effective web applications.
                 </p>
               </div>
-              <Button/>
+              <Button text="Hire Me"  onClick={handleClick} />
             </div>
           </div>
         </div>
