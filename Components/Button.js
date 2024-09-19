@@ -1,23 +1,22 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const Button = ({ 
-  text, 
-  onClick, 
-  className = '', 
-  icon, 
-  iconPosition = 'right' 
-}) => {
+const Button = React.forwardRef(({
+  text,
+  className = '',
+  icon,
+  iconPosition = 'right',
+}, ref) => {
   const iconElement = icon ? (
-    <FontAwesomeIcon 
-      icon={icon} 
+    <FontAwesomeIcon
+      icon={icon}
       className={`${iconPosition === 'right' ? 'ml-2' : 'mr-2'}`}
     />
   ) : null;
 
   return (
     <button
-      onClick={onClick}
+      ref={ref}
       className={`group/button relative inline-flex items-center justify-center overflow-hidden rounded-md bg-yellow-600 dark:bg-cyanLight backdrop-blur-lg px-6 py-2 text-base font-semibold text-white dark:text-veryDarkBlue transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-xl hover:shadow-blue-600/50 border border-white/20 ${className}`}
     >
       {iconPosition === 'left' && iconElement}
@@ -30,6 +29,8 @@ const Button = ({
       </div>
     </button>
   );
-};
+});
+
+Button.displayName = 'Button';
 
 export default Button;

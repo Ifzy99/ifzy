@@ -66,7 +66,7 @@ html {
 }
 
 /* Tilt effect */
-.tilt-card {
+/* .tilt-card {
   transition: transform 0.3s ease;
 }
 
@@ -79,7 +79,7 @@ html {
     transition: none;
     transform: none;
   }
-}
+} */
 
 /* Media queries */
 @media (max-width: 576px) {

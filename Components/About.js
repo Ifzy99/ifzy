@@ -27,12 +27,12 @@ const About = () => {
           When I'm not coding, you can usually find me watching a football match, especially if Arsenal is playing, or browsing the web to stay updated on global events. I'm also a fan of good music and enjoy watching movies in my downtime.
           </p>
           <div className="">
-          <Link href="#contact" passHref legacyBehavior>
+          <Link href="#contact">
           <Button text="Contact Me" />
           </Link>
-          <Link href="https://drive.google.com/file/d/1xXIcQzoav-_1GlEWuFo9siaIsA7iIlr0/view?usp=drivesdk "passHref legacyBehavior>
+          <a href="https://drive.google.com/file/d/1xXIcQzoav-_1GlEWuFo9siaIsA7iIlr0/view?usp=drivesdk " target="_blank" rel="noopener noreferrer">
           <Button text="Resume" className="ml-4"  icon={faDownload} />
-          </Link>
+          </a>
           </div>
         </div>
         <div className="md:w-1/2 relative">

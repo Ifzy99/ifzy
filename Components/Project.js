@@ -81,13 +81,13 @@ const Project = () => {
           <div 
             key={index} 
             ref={el => projectRefs.current[index] = el}
-            className="projects-card bg-rgba(212, 217, 217, 0.5) dark:bg-veryDarkViolet border border-gray-300 dark:border-gray-500 rounded-md p-1 md:p-1 animate-slide-left tilt-card"
+            className="projects-card bg-rgba(212, 217, 217, 0.5) dark:bg-veryDarkViolet border border-gray-300 dark:border-gray-500 rounded-md p-1 md:p-1 animate-slide-left"
           >
             <div className="py-2 text-left space-y-0 flex flex-row justify-between md:px-8 px-2 items-center">
               <div className="pb-3">
                 <span className="text-[20px] md:text-[24px]">{project.title}</span>
               </div>
-              <div className="justify-end project-links dark:text-grayishBlue">
+              <div className="inline-block transition-transform duration-300 hover:scale-125 justify-end project-links dark:text-grayishBlue">
                 <a href={project.githubLink}>
                   <FontAwesomeIcon icon={faGithub} />
                 </a>
@@ -101,7 +101,7 @@ const Project = () => {
                   {project.category}
                 </div>
                 <div className="">
-                  <a href={project.liveLink}>
+                  <a href={project.liveLink} className="inline-block transition-transform duration-300 hover:scale-125">
                     <FontAwesomeIcon icon={faLink} />
                   </a>
                 </div>

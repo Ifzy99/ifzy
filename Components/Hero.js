@@ -1,10 +1,9 @@
 import Image from "next/image";
 import Button from "./Button";
+import Link from 'next/link';
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Hero = () => {
-  const handleClick = () => {
-    console.log('Button clicked!');
-  };
   return (
     <>
       <div id="hero" className="section-container min-h-full mt-20">
@@ -33,7 +32,9 @@ const Hero = () => {
                   and effective web applications.
                 </p>
               </div>
-              <Button text="Hire Me"  onClick={handleClick} />
+              <Link href="https://github.com/Ifzy99">
+              <Button text="Github" icon={faGithub} />
+              </Link>
             </div>
           </div>
         </div>
