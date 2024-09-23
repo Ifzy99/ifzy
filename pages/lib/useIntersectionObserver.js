@@ -4,9 +4,9 @@ const useIntersectionObserver = (options) => {
   const elementRef = useRef(null);
 
   useEffect(() => {
-    // Check if the window object is available (i.e., we are in the browser)
-    if (typeof window === 'undefined' || !elementRef.current) return;
-    
+    // Ensure this runs only in the browser
+    if (typeof window === 'undefined') return;
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
