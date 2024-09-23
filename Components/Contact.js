@@ -8,10 +8,14 @@ import { useRef } from "react";
   import emailjs from '@emailjs/browser';
   const emailjsUserId = "tPOdcM7GPR0n1eIOF"
   emailjs.init(emailjsUserId);
+import useIntersectionObserver from "@/pages/lib/useIntersectionObserver";
+
+
 
 
 
 const Contact = () => {
+ 
     return (
         <SnackbarProvider
         maxSnack={1}
@@ -49,11 +53,12 @@ const Contact = () => {
                 },
               );
           };
+          const sectionRef = useIntersectionObserver({ threshold: 0.3 });
     
          return(
             <div
-            id="contact"
-            className="section-container flex flex-col py-8 justify-between md:flex-row-reverse"
+            id="contact" ref={sectionRef}
+            className="section-container flex flex-col py-8 justify-between md:flex-row-reverse animate-slide-left"
           >
             <div className="mt-6 w-1/2">
               <div className="flex justify-center space-x-6 text-4xl">
@@ -88,7 +93,7 @@ const Contact = () => {
               </div>
               <div className="contact-form my-6">
                 <div className="flex justify-center md:justify-start">
-                  <div className="w-[280px] bg-rgba(212, 217, 217, 0.5) dark:bg-gradient-to-r from-transparent via-[#372939] to-[#51707d] border-2 border-transparent p-8 text-white rounded-2xl flex flex-col gap-5 border-box bg-[#212121] animate-gradient-x bg-no-repeat bg-[200%_100%] md:w-[400px]">
+                  <div className="w-[280px] bg-rgba(212, 217, 217, 0.5) dark:bg-transparent border-2 border-transparent p-8 text-white rounded-2xl flex flex-col gap-5 border-box bg-[#212121] bg-no-repeat bg-[200%_100%] md:w-[400px]">
       
                     <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-5">
                       <div className="flex flex-col gap-1">

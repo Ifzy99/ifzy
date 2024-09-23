@@ -4,15 +4,18 @@ import Image from 'next/image';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import Button from './Button';
 import Link from 'next/link';
+import useIntersectionObserver from "@/pages/lib/useIntersectionObserver";
+
 
 
 const About = () => {
+  const sectionRef = useIntersectionObserver({ threshold: 0.3 });
   return (
     <section id="about" className="py-16 px-8 md:px-6 max-w-7xl mx-auto">
       <h2 className="text-2xl md:text-4xl font-bold text-center text-grayishBlue dark:text-white mb-10">About Me</h2>
 
-      <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
-        <div className="md:w-1/2">
+      <div ref={sectionRef} className="flex flex-col md:flex-row items-center md:items-start gap-8 animate-slide-left">
+        <div  className="md:w-1/2 ">
           <h3 className="text-2xl md:text-3xl font-bold text-yellow-600 dark:text-[#4ec1b5] mb-4 leading-tight">
             Developing With a Passion<br />While Exploring The World.
           </h3>
@@ -35,7 +38,7 @@ const About = () => {
           </a>
           </div>
         </div>
-        <div className="md:w-1/2 relative">
+        <div  className="md:w-1/2 relative">
           <div className="bg-gray-900 dark:bg-veryDarkBlue w-full h-full absolute top-4 left-4 rounded-lg"></div>
           <div className="relative z-10 bg-gray-200 rounded-lg overflow-hidden">
             <Image

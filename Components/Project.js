@@ -81,7 +81,7 @@ const Project = () => {
           <div 
             key={index} 
             ref={el => projectRefs.current[index] = el}
-            className="projects-card bg-rgba(212, 217, 217, 0.5) dark:bg-veryDarkViolet border border-gray-300 dark:border-gray-500 rounded-md p-1 md:p-1 animate-slide-left"
+            className="projects-card bg-rgba(212, 217, 217, 0.5) dark:bg-tranparent border border-gray-300 dark:border-gray-500 rounded-md p-1 md:p-1 animate-slide-left transition-transform duration-500 ease-out hover:-translate-y-8 hover:shadow-lg"
           >
             <div className="py-2 text-left space-y-0 flex flex-row justify-between md:px-8 px-2 items-center">
               <div className="pb-3">
@@ -95,7 +95,7 @@ const Project = () => {
             </div>
             <p className="px-2 py-2 md:px-8 md:py-4 text-sm md:text-base">{project.description}</p>
             <p className="p-2 md:px-8 text-sm dark:text-gray-400">{project.stacks}</p>
-            <div className="w-full border-t border-gray-200 dark:border-[#1F1F22] py-4 md:px-8 px-2">
+            <div className="w-full border-t border-gray-200 dark:border-[#161622] py-4 md:px-8 px-2">
               <div className="flex flex-row justify-between items-center">
                 <div className="py-2 px-4 rounded-xl border border-orange-400/50 text-orange-400 bg-orange-400/10">
                   {project.category}

@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPencilRuler, faLaptopCode, faMobileAlt, faServer } from '@fortawesome/free-solid-svg-icons';
+import { faLaptopCode, faMobileAlt, faServer } from '@fortawesome/free-solid-svg-icons';
+
 
 const Services = () => {
   return (
@@ -35,7 +36,7 @@ const Services = () => {
 
 const ServiceCard = ({ icon, title, description }) => {
   return (
-    <div className="p-6 border border-gray-200 rounded-lg">
+    <div  className="p-6 border border-gray-200 rounded-lg transition-transform duration-500 ease-out hover:-translate-y-4 hover:shadow-lg">
       <div className="mb-4">
         <FontAwesomeIcon icon={icon} className="dark:text-grayishBlue w-8 h-8" />
       </div>

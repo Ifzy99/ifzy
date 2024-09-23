@@ -2,8 +2,11 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHtml5, faCss3Alt, faJs,faReact, faBootstrap, faFigma, faNodeJs,  faGithub, faGitAlt, faAngular,faVuejs, faPhp } from '@fortawesome/free-brands-svg-icons';
 import { faCode, faDatabase, } from '@fortawesome/free-solid-svg-icons';
+import useIntersectionObserver from '@/pages/lib/useIntersectionObserver';
 
 const Skills = () => {
+  
+  
   const skillsData = [
     { name: 'HTML5', icon: faHtml5 },
     { name: 'CSS3', icon: faCss3Alt },
@@ -33,9 +36,9 @@ const Skills = () => {
   ];
 
   return (
-    <div id="skills"  className="p-4 md:p-8 bg-rgba(212, 217, 217, 0.5) dark:bg-gray-900 text-grayishBlue dark:text-white animate-slide-right">
+    <div id="skills"  className="p-4 md:p-8 bg-rgba(212, 217, 217, 0.5) dark:bg-gray-900 text-grayishBlue dark:text-white">
       <h2 className="text-2xl md:text-4xl font-bold mb-6 text-center text-#333 dark:darkGrayishBlue">My Skills</h2>
-     {/*<div className="w-24 h-1 bg-yellow-600 mx-auto mb-16"></div>*/}
+     
 
       
       <div className="space-y-6 my-8">  
@@ -48,8 +51,9 @@ const Skills = () => {
 };
 
 const SkillSection = ({ title, skills }) => {
+  const sectionRef = useIntersectionObserver({ threshold: 0.3 });
   return (
-    <div  className=" px-8 md:px-12  py-4">
+    <div ref={sectionRef} className=" px-8 md:px-12  py-4 animate-slide-left">
       <h3 className="text-xl sm:text-l font-medium mb-4">{title}</h3>
       <div className="flex flex-wrap justify-between sm:justify-start gap-3 sm:gap-4">
         {skills.map((skill, index) => (

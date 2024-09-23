@@ -40,7 +40,7 @@ html {
 #hero {
   background-image: url("../public/Images/bg-header-desktop.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 /* Animation */
@@ -65,21 +65,26 @@ html {
   animation: slideInFromLeft 0.8s ease forwards;
 }
 
-/* Tilt effect */
-/* .tilt-card {
-  transition: transform 0.3s ease;
+.reveal-letter {
+  opacity: 0;
+  transform: translateY(10px);
+  display: inline-block;
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-.tilt-card:hover {
-  transform: perspective(1000px) rotateX(5deg) rotateY(-5deg) scale(1.05);
+.animate .reveal-letter {
+  opacity: 1;
+  transform: translateY(0);
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .tilt-card, .tilt-card:hover {
-    transition: none;
-    transform: none;
+@keyframes reveal-text {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-} */
+}
+
+
 
 /* Media queries */
 @media (max-width: 576px) {
