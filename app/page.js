@@ -8,7 +8,6 @@ import Navbar from "@/Components/Navbar";
 import Project from "@/Components/Project";
 import Skills from "@/Components/Skills";
 import SocialIcons from "@/Components/SocialIcons";
-import Just from "@/Components/Just";
 import Services from '@/Components/Services';
 
 export default function Home() {
@@ -24,7 +23,6 @@ export default function Home() {
       <Skills/>
       <Project/>
        <Contact/>
-       {/*<Just/>*/}
       <SocialIcons/>
       <Footer />
       </div>

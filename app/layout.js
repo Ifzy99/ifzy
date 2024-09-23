@@ -1,4 +1,4 @@
-import { Inter, Roboto, Rubik } from "next/font/google";
+import { Inter, Roboto } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 
