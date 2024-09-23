@@ -5,7 +5,7 @@ const useIntersectionObserver = (options) => {
 
   useEffect(() => {
     // Ensure this runs only in the browser
-    if (typeof window === 'undefined') return;
+    if (typeof window === 'undefined' || !elementRef.current) return;
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -17,9 +17,7 @@ const useIntersectionObserver = (options) => {
       });
     }, options);
 
-    if (elementRef.current) {
-      observer.observe(elementRef.current);
-    }
+    observer.observe(elementRef.current);
 
     return () => {
       if (elementRef.current) {
@@ -28,7 +26,7 @@ const useIntersectionObserver = (options) => {
     };
   }, [options]);
 
-  return elementRef;
+  return typeof window !== 'undefined' ? elementRef : null; // Return null if server-side
 };
 
 export default useIntersectionObserver;
