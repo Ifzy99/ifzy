@@ -24,10 +24,10 @@ const About = () => {
             I am an enthusiastic and a passionate web developer with experience of working with both frontend and backend frameworks.
           </p>
           <p className="text-gray-600 mb-4">
-           So far,I've focused on building landing pages and web applications, primarily using the MERN stack (MongoDB, Express, React, Node.js).I also have experience with Angular, Vue, , PHP and Next.JS. I am skilled at understanding project requirements and turning them into functional, user-friendly solutions. I'm a strong advocate for continuous learning and always strive to stay updated with the latest trends and technologies in the web development field. This approach helps me deliver efficient and modern solutions in my projects.
+           So far,I havefocused on building landing pages and web applications, primarily using the MERN stack (MongoDB, Express, React, Node.js).I also have experience with Angular, Vue, , PHP and Next.JS. I am skilled at understanding project requirements and turning them into functional, user-friendly solutions. I am a strong advocate for continuous learning and always strive to stay updated with the latest trends and technologies in the web development field. This approach helps me deliver efficient and modern solutions in my projects.
           </p>
           <p className="text-gray-600 mb-8">
-          When I'm not coding, you can usually find me watching a football match, especially if Arsenal is playing, or browsing the web to stay updated on global events. I'm also a fan of good music and enjoy watching movies in my downtime.
+          When I am not coding, you can usually find me watching a football match, especially if Arsenal is playing, or browsing the web to stay updated on global events. I am also a fan of good music and enjoy watching movies in my downtime.
           </p>
           <div className="">
           <Link href="#contact">

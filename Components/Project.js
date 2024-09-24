@@ -3,7 +3,6 @@ import React, { useEffect, useRef} from 'react';
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "../styles/just.css"
 
 const Project = () => {
   const projectRefs = useRef([]);

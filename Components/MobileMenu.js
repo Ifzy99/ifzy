@@ -1,9 +1,7 @@
-import { useTheme } from "next-themes";
-import "../styles/nav.css"
+import "../styles/nav.module.css"
 
 
 const MobileMenu = ({ menuOpen, navToggle }) => {
-  const {theme} = useTheme();
     return (
       <button
         id="menu-btn"
