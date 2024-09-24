@@ -1,7 +1,7 @@
 "use client";
+
 import "../styles/nav.css";
 import { useState, useEffect } from "react";
-import { useTheme } from 'next-themes';
 import Logo from "./Logo";
 import NavLinks from "./NavLinks";
 import MobileMenu from "./MobileMenu";
@@ -11,9 +11,8 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isFixed, setIsFixed] = useState(false);
   const [mounted, setMounted] = useState(false);
-  const { theme, systemTheme } = useTheme();
 
-  const currentTheme = theme === 'system' ? systemTheme : theme;
+
 
   useEffect(() => {
     setMounted(true);
