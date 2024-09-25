@@ -2,18 +2,30 @@ import Image from "next/image";
 import Button from "./Button";
 import Link from 'next/link';
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import useIntersectionObserver from "@/pages/lib/useIntersectionObserver";
+import useIntersectionObserver from '../hooks/useIntersectionObserver';
 import AnimatedText from "./AnimatedText";
 
 
 const Hero = () => {
-  const sectionRef = useIntersectionObserver({ threshold: 0.3 });
+  const handleIntersection = (entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        console.log('Element is in view!');
+        entry.target.classList.add('animate');
+      } else {
+        entry.target.classList.remove('animate');
+      }
+    });
+  }
+
+  const elementRef = useIntersectionObserver(handleIntersection,{root: null,
+    rootMargin: '0px', threshold: 0.3 });
 
   
   return (
     <>
       <div id="hero" className="section-container min-h-full mt-20">
-        <div ref={sectionRef}  className="p-4 md:px-8 mx-6 rounded-2xl animate-slide-left">
+        <div ref={elementRef}  className="p-4 md:px-8 mx-6 rounded-2xl animate-slide-left">
           <div className="relative flex flex-col md:flex-row space-y-10">
             <div className="mx-auto md:order-2">
               <Image

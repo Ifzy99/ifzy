@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import useIntersectionObserver from '../hooks/useIntersectionObserver';
 
 const AnimatedText = ({ text, className }) => {
   const [displayedText, setDisplayedText] = useState('');
@@ -6,30 +7,40 @@ const AnimatedText = ({ text, className }) => {
   const textRef = useRef(null);
   const animationTriggeredRef = useRef(false);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting && !animationTriggeredRef.current) {
-          setShouldAnimate(true);
-          animationTriggeredRef.current = true;
-        } else if (!entries[0].isIntersecting) {
-          setDisplayedText('');
-          animationTriggeredRef.current = false;
-        }
-      },
-      { threshold: 0.1 }
-    );
-
-    if (textRef.current) {
-      observer.observe(textRef.current);
+  const handleIntersection = (entries) => {
+    if (entries[0].isIntersecting) {
+      setShouldAnimate(true);
+    } else {
+      setDisplayedText('');
     }
+  };
 
-    return () => {
+  useIntersectionObserver(handleIntersection, { threshold: 0.1 }, textRef);
+
+    useEffect(() => {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          if (entries[0].isIntersecting && !animationTriggeredRef.current) {
+            setShouldAnimate(true);
+            animationTriggeredRef.current = true;
+          } else if (!entries[0].isIntersecting) {
+            setDisplayedText('');
+            animationTriggeredRef.current = false;
+          }
+        },
+        { threshold: 0.1 }
+      );
+
       if (textRef.current) {
-        observer.unobserve(textRef.current);
+        observer.observe(textRef.current);
       }
-    };
-  }, []);
+
+      return () => {
+        if (textRef.current) {
+          observer.unobserve(textRef.current);
+        }
+      };
+    }, []);
 
   useEffect(() => {
     if (shouldAnimate) {

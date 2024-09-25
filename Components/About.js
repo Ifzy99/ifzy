@@ -4,17 +4,29 @@ import Image from 'next/image';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import Button from './Button';
 import Link from 'next/link';
-import useIntersectionObserver from "@/pages/lib/useIntersectionObserver";
+import useIntersectionObserver from "../hooks/useIntersectionObserver";
 
 
 
 const About = () => {
-  const sectionRef = useIntersectionObserver({ threshold: 0.3 });
+  const handleIntersection = (entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        console.log('Element is in view!');
+        entry.target.classList.add('animate');
+      } else {
+        entry.target.classList.remove('animate');
+      }
+    });
+  }
+
+  const elementRef = useIntersectionObserver(handleIntersection,{root: null,
+    rootMargin: '0px', threshold: 0.3 });
   return (
     <section id="about" className="py-16 px-8 md:px-6 max-w-7xl mx-auto">
       <h2 className="text-2xl md:text-4xl font-bold text-center text-grayishBlue dark:text-white mb-10">About Me</h2>
 
-      <div ref={sectionRef} className="flex flex-col md:flex-row items-center md:items-start gap-8 animate-slide-left">
+      <div ref={elementRef} className="flex flex-col md:flex-row items-center md:items-start gap-8 animate-slide-left">
         <div  className="md:w-1/2 ">
           <h3 className="text-2xl md:text-3xl font-bold text-yellow-600 dark:text-[#4ec1b5] mb-4 leading-tight">
             Developing With a Passion<br />While Exploring The World.

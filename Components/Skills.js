@@ -2,7 +2,8 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHtml5, faCss3Alt, faJs,faReact, faBootstrap, faFigma, faNodeJs,  faGithub, faGitAlt, faAngular,faVuejs, faPhp } from '@fortawesome/free-brands-svg-icons';
 import { faCode, faDatabase, } from '@fortawesome/free-solid-svg-icons';
-import useIntersectionObserver from '@/pages/lib/useIntersectionObserver';
+import useIntersectionObserver from '../hooks/useIntersectionObserver';
+
 
 const Skills = () => {
   
@@ -51,9 +52,21 @@ const Skills = () => {
 };
 
 const SkillSection = ({ title, skills }) => {
-  const sectionRef = useIntersectionObserver({ threshold: 0.3 });
+  const handleIntersection = (entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        console.log('Element is in view!');
+        entry.target.classList.add('animate');
+      } else {
+        entry.target.classList.remove('animate');
+      }
+    });
+  }
+
+  const elementRef = useIntersectionObserver(handleIntersection,{root: null,
+    rootMargin: '0px', threshold: 0.3 });
   return (
-    <div ref={sectionRef} className=" px-8 md:px-12  py-4 animate-slide-left">
+    <div ref={elementRef} className=" px-8 md:px-12  py-4 animate-slide-left">
       <h3 className="text-xl sm:text-l font-medium mb-4">{title}</h3>
       <div className="flex flex-wrap justify-between sm:justify-start gap-3 sm:gap-4">
         {skills.map((skill, index) => (

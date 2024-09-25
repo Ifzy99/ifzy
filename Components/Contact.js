@@ -8,7 +8,8 @@ import { useRef } from "react";
   import emailjs from '@emailjs/browser';
   const emailjsUserId = "tPOdcM7GPR0n1eIOF"
   emailjs.init(emailjsUserId);
-import useIntersectionObserver from "@/pages/lib/useIntersectionObserver";
+  import useIntersectionObserver from '../hooks/useIntersectionObserver';
+
 
 
 
@@ -53,11 +54,24 @@ const Contact = () => {
                 },
               );
           };
-          const sectionRef = useIntersectionObserver({ threshold: 0.3 });
+
+          const handleIntersection = (entries) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                console.log('Element is in view!');
+                entry.target.classList.add('animate');
+              } else {
+                entry.target.classList.remove('animate');
+              }
+            });
+          }
+
+          const elementRef = useIntersectionObserver(handleIntersection,{root: null,
+    rootMargin: '0px', threshold: 0.3 });
     
          return(
             <div
-            id="contact" ref={sectionRef}
+            id="contact" ref={elementRef}
             className="section-container flex flex-col py-8 justify-between md:flex-row-reverse animate-slide-left"
           >
             <div className="mt-6 w-1/2">
