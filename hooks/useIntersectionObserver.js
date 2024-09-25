@@ -48,13 +48,13 @@ const useIntersectionObserver = (callback = () => {}, options) => {
 
     if (currentElement) {
       observer.observe(currentElement);
-      console.log("Observing:", currentElement);
+      // console.log("Observing:", currentElement);
     }
 
     return () => {
       if (currentElement) {
         observer.unobserve(currentElement);
-        console.log("Stopped observing:", currentElement);
+        // console.log("Stopped observing:", currentElement);
       }
     };
   }, [callback, options]);

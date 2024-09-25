@@ -1,6 +1,4 @@
 "use client";
-
-import  "../styles/nav.module.css";
 import { useState, useEffect } from "react";
 import Logo from "./Logo";
 import NavLinks from "./NavLinks";

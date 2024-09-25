@@ -1,4 +1,4 @@
-import "../styles/nav.module.css"
+
 
 
 const MobileMenu = ({ menuOpen, navToggle }) => {
