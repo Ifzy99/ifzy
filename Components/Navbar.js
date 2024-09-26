@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Logo from "./Logo";
 import NavLinks from "./NavLinks";
 import MobileMenu from "./MobileMenu";
-import DarkModeToggler from "./DarkModeToggler";
+// import DarkModeToggler from "./DarkModeToggler";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -53,7 +53,7 @@ const Navbar = () => {
         <div className="flex items-center lg:px-8 justify-between space-x-20 ">
           <Logo />
           <NavLinks />
-          <DarkModeToggler />
+          {/*<DarkModeToggler />*/}
           <MobileMenu menuOpen={menuOpen} navToggle={navToggle} />
         </div>
 
