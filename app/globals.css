@@ -2,17 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
+/* html {
   scroll-behavior: smooth;
   font-optical-sizing: auto;
 }
 
 .section-container {
   @apply items-center justify-center mx-auto;
-}
+} */
 
 /* CSS */
-.social-icon {
+/* .social-icon {
   @apply relative flex items-center justify-center w-10 h-10 text-gray-600 transition-colors duration-300 overflow-hidden;
 }
 
@@ -22,11 +22,11 @@ html {
 
 .social-icon:hover .dash {
   @apply translate-y-[calc(100%+0.25rem)];
-}
+} */
 
 /* HAMBURGER MENU */
 
-.hamburger {
+/* .hamburger {
   cursor: pointer;
   width: 24px;
   height: 24px;
@@ -80,12 +80,12 @@ html {
   width: 32px;
   transform: rotate(-45deg) translate(-9px);
   background-color: #fff;
-}
+} */
 
 
 
 /* Common styles */
-#hero, #services, #skills, #about, #contact,#footer, #projects {
+/* #hero, #services, #skills, #about, #contact,#footer, #projects {
   font-family: "Montserrat", san-serif;
 }
 
@@ -97,10 +97,10 @@ html {
   background-image: url("../public/Images/bg-header-desktop.png");
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 
 /* Animation */
-@keyframes slideInFromLeft {
+/* @keyframes slideInFromLeft {
   from {
     opacity: 0;
     transform: translateX(-100px);
@@ -138,12 +138,12 @@ html {
     opacity: 1;
     transform: translateY(0);
   }
-}
+} */
 
 
 
 /* Media queries */
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
   #logo {
     width: 50px;
     height: auto;
@@ -177,4 +177,4 @@ html {
 
  
 }
-
+ */
