@@ -15,14 +15,14 @@ export default function Home() {
     <>
     <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
       <Navbar  />
-      <Hero />
+      {/*<Hero />
       <Services/>
       <About />
       <Skills/>
       <Project/>
        <Contact/>
       <SocialIcons/>
-      <Footer />
+      <Footer />*/}
       </div>
     </>
   );
