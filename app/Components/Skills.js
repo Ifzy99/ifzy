@@ -1,8 +1,8 @@
-import React from 'react';
+"use client"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHtml5, faCss3Alt, faJs,faReact, faBootstrap, faFigma, faNodeJs,  faGithub, faGitAlt, faAngular,faVuejs, faPhp } from '@fortawesome/free-brands-svg-icons';
 import { faCode, faDatabase, } from '@fortawesome/free-solid-svg-icons';
-import useIntersectionObserver from '../hooks/useIntersectionObserver';
+import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
 
 
 const Skills = () => {
@@ -61,7 +61,7 @@ const SkillSection = ({ title, skills }) => {
         entry.target.classList.remove('animate');
       }
     });
-  }
+  };
 
   const elementRef = useIntersectionObserver(handleIntersection,{root: null,
     rootMargin: '0px', threshold: 0.3 });

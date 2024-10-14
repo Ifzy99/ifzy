@@ -6,6 +6,8 @@ import Hero from "./Components/Hero";
 import Footer from "./Components/Footer";
 import Services from "./Components/Services";
 import About from "./Components/About";
+import Skills from "./Components/Skills";
+import Project from "./Components/Project";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -26,6 +28,8 @@ export default function RootLayout({ children }) {
         <Hero/>
         <Services/>
         <About/>
+        <Skills/>
+        <Project/>
         <Footer/>
         </div>
         </ThemeProviderWrapper>
