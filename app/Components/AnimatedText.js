@@ -1,5 +1,7 @@
+"use client"
+
 import React, { useState, useEffect, useRef } from 'react';
-import useIntersectionObserver from '../hooks/useIntersectionObserver';
+import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
 
 const AnimatedText = ({ text, className }) => {
   const [displayedText, setDisplayedText] = useState('');

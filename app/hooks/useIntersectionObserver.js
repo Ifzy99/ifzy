@@ -1,3 +1,5 @@
+"use client"
+
 // import { useEffect, useRef } from 'react';
 
 // const useIntersectionObserver = (options) => {
@@ -37,7 +39,7 @@
 
 import { useEffect, useRef } from 'react';
 
-const useIntersectionObserver = (callback = () => {}, options) => {
+export const useIntersectionObserver = (callback = () => {}, options) => {
   const elementRef = useRef(null);
 
   useEffect(() => {

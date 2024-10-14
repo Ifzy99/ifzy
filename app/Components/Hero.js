@@ -1,12 +1,21 @@
+"use client"
+
 import Image from "next/image";
 import Button from "./Button";
 import Link from 'next/link';
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import useIntersectionObserver from '../hooks/useIntersectionObserver';
+import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
+console.log('useIntersectionObserver:', useIntersectionObserver);
 import AnimatedText from "./AnimatedText";
 
 
+
+
 const Hero = () => {
+   
+  
+  
+
   const handleIntersection = (entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -18,8 +27,11 @@ const Hero = () => {
     });
   }
 
-  const elementRef = useIntersectionObserver(handleIntersection,{root: null,
-    rootMargin: '0px', threshold: 0.3 });
+  const elementRef = useIntersectionObserver(handleIntersection, {
+    root: null,
+    rootMargin: '0px', 
+    threshold: 0.3 
+  });
 
   
   return (

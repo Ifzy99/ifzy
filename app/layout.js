@@ -1,8 +1,8 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import ThemeProviderWrapper from "./ThemeProviderWrapper";
-// import Navbar from "./Components/Navbar";
-// import Hero from "./Components/Hero";
+import Navbar from "./Components/Navbar";
+import Hero from "./Components/Hero";
 import Footer from "./Components/Footer";
 // import Services from "./Components/Services";
 
@@ -21,6 +21,8 @@ export default function RootLayout({ children }) {
       <body className={`${inter.className}`}>
         <ThemeProviderWrapper>{children}
         <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
+        <Navbar/>
+        <Hero/>
         <Footer/>
         </div>
         </ThemeProviderWrapper>
